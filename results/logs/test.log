@@ -1,0 +1,385 @@
+2026-02-10 12:23:50 [INFO] conftest: === pytest session start ===
+2026-02-10 12:23:50 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-10 12:23:50 [INFO] conftest: platform=win32
+2026-02-10 12:23:50 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-10 12:23:50 [INFO] conftest: START tests/test_generated.py::test_democandidate_smoke_stub_login
+2026-02-10 12:23:53 [INFO] conftest: PASS  tests/test_generated.py::test_democandidate_smoke_stub_login (2.424s)
+2026-02-10 12:23:54 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-10 12:27:47 [INFO] conftest: === pytest session start ===
+2026-02-10 12:27:47 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-10 12:27:47 [INFO] conftest: platform=win32
+2026-02-10 12:27:47 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-10 12:27:47 [INFO] conftest: START tests/test_generated.py::test_democandidate_smoke_stub_login
+2026-02-10 12:27:51 [INFO] conftest: PASS  tests/test_generated.py::test_democandidate_smoke_stub_login (2.233s)
+2026-02-10 12:27:52 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-10 12:32:39 [INFO] conftest: === pytest session start ===
+2026-02-10 12:32:39 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-10 12:32:39 [INFO] conftest: platform=win32
+2026-02-10 12:32:39 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-10 12:32:39 [INFO] conftest: START tests/test_generated.py::test_democandidate_smoke_stub_login
+2026-02-10 12:32:43 [INFO] conftest: PASS  tests/test_generated.py::test_democandidate_smoke_stub_login (2.429s)
+2026-02-10 12:32:44 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-10 12:35:17 [INFO] conftest: === pytest session start ===
+2026-02-10 12:35:17 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-10 12:35:17 [INFO] conftest: platform=win32
+2026-02-10 12:35:17 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-10 12:35:17 [INFO] conftest: START tests/test_generated.py::test_democandidate_smoke_stub_login
+2026-02-10 12:35:21 [INFO] conftest: PASS  tests/test_generated.py::test_democandidate_smoke_stub_login (2.995s)
+2026-02-10 12:35:22 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-10 12:45:13 [INFO] conftest: === pytest session start ===
+2026-02-10 12:45:13 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-10 12:45:13 [INFO] conftest: platform=win32
+2026-02-10 12:45:13 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-10 12:45:13 [INFO] conftest: START tests/test_dashboard.py::test_dashboard_smoke
+2026-02-10 12:45:34 [INFO] conftest: PASS  tests/test_dashboard.py::test_dashboard_smoke (2.730s)
+2026-02-10 12:45:34 [INFO] conftest: START tests/test_generated.py::test_democandidate_smoke_stub_login
+2026-02-10 12:45:38 [INFO] conftest: PASS  tests/test_generated.py::test_democandidate_smoke_stub_login (3.213s)
+2026-02-10 12:45:38 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-10 12:50:43 [INFO] conftest: === pytest session start ===
+2026-02-10 12:50:43 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-10 12:50:43 [INFO] conftest: platform=win32
+2026-02-10 12:50:43 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-10 12:50:43 [INFO] conftest: START tests/test_dashboard.py::test_dashboard_smoke
+2026-02-10 12:50:47 [INFO] conftest: PASS  tests/test_dashboard.py::test_dashboard_smoke (2.662s)
+2026-02-10 12:50:47 [INFO] conftest: START tests/test_generated.py::test_democandidate_smoke_stub_login
+2026-02-10 12:50:49 [INFO] conftest: PASS  tests/test_generated.py::test_democandidate_smoke_stub_login (1.688s)
+2026-02-10 12:50:49 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-10 13:09:15 [INFO] conftest: === pytest session start ===
+2026-02-10 13:09:15 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-10 13:09:15 [INFO] conftest: platform=win32
+2026-02-10 13:09:15 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-10 13:09:15 [INFO] conftest: START tests/test_generated.py::test_democandidate_smoke_stub_login
+2026-02-10 13:09:28 [INFO] conftest: PASS  tests/test_generated.py::test_democandidate_smoke_stub_login (1.996s)
+2026-02-10 13:09:28 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-10 13:11:53 [INFO] conftest: === pytest session start ===
+2026-02-10 13:11:53 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-10 13:11:53 [INFO] conftest: platform=win32
+2026-02-10 13:11:53 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-10 13:11:53 [INFO] conftest: START tests/test_dashboard.py::test_dashboard_smoke
+2026-02-10 13:11:56 [INFO] conftest: PASS  tests/test_dashboard.py::test_dashboard_smoke (2.522s)
+2026-02-10 13:11:56 [INFO] conftest: START tests/test_generated.py::test_democandidate_smoke_stub_login
+2026-02-10 13:11:58 [INFO] conftest: PASS  tests/test_generated.py::test_democandidate_smoke_stub_login (1.556s)
+2026-02-10 13:11:59 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-10 13:16:30 [INFO] conftest: === pytest session start ===
+2026-02-10 13:16:30 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-10 13:16:30 [INFO] conftest: platform=win32
+2026-02-10 13:16:30 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-10 13:16:30 [INFO] conftest: START tests/test_dashboard.py::test_dashboard_smoke
+2026-02-10 13:16:34 [INFO] conftest: PASS  tests/test_dashboard.py::test_dashboard_smoke (2.497s)
+2026-02-10 13:16:34 [INFO] conftest: START tests/test_login.py::test_democandidate_smoke_stub_login
+2026-02-10 13:16:35 [INFO] conftest: PASS  tests/test_login.py::test_democandidate_smoke_stub_login (1.542s)
+2026-02-10 13:16:36 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-12 22:09:58 [INFO] conftest: === pytest session start ===
+2026-02-12 22:09:58 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-12 22:09:58 [INFO] conftest: platform=win32
+2026-02-12 22:09:58 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-12 22:09:58 [INFO] conftest: START tests/test_login.py::test_login_ui_visible
+2026-02-12 22:10:35 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_ui_visible_20260212T164034Z.png
+2026-02-12 22:10:35 [ERROR] conftest: FAIL  tests/test_login.py::test_login_ui_visible (16.586s)
+2026-02-12 22:10:35 [INFO] conftest: START tests/test_login.py::test_login_button_disabled_when_empty
+2026-02-12 22:11:08 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_button_disabled_when_empty_20260212T164107Z.png
+2026-02-12 22:11:08 [ERROR] conftest: FAIL  tests/test_login.py::test_login_button_disabled_when_empty (31.324s)
+2026-02-12 22:11:08 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[fake.user@example.com-wrong-password-wrong_password]
+2026-02-12 22:11:10 [ERROR] conftest: Failed to capture screenshot for tests/test_login.py::test_login_negative_cases[fake.user@example.com-wrong-password-wrong_password]
+Traceback (most recent call last):
+  File "D:\playwright-mcp\conftest.py", line 172, in pytest_runtest_makereport
+    page.screenshot(path=str(path), full_page=True)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9819, in screenshot
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.screenshot(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 814, in screenshot
+    encoded_binary = await self._channel.send(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+        "screenshot", self._timeout_settings.timeout, params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.screenshot: Target page, context or browser has been closed
+2026-02-12 22:11:10 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[fake.user@example.com-wrong-password-wrong_password] (1.278s)
+2026-02-12 22:11:10 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[wrong.user@example.com-SomePassword123!-wrong_email]
+2026-02-12 22:11:12 [ERROR] conftest: Failed to capture screenshot for tests/test_login.py::test_login_negative_cases[wrong.user@example.com-SomePassword123!-wrong_email]
+Traceback (most recent call last):
+  File "D:\playwright-mcp\conftest.py", line 172, in pytest_runtest_makereport
+    page.screenshot(path=str(path), full_page=True)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9819, in screenshot
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.screenshot(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 814, in screenshot
+    encoded_binary = await self._channel.send(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+        "screenshot", self._timeout_settings.timeout, params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.screenshot: Target page, context or browser has been closed
+2026-02-12 22:11:12 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[wrong.user@example.com-SomePassword123!-wrong_email] (2.256s)
+2026-02-12 22:11:12 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[-SomePassword123!-empty_email]
+2026-02-12 22:11:29 [ERROR] conftest: Failed to capture screenshot for tests/test_login.py::test_login_negative_cases[-SomePassword123!-empty_email]
+Traceback (most recent call last):
+  File "D:\playwright-mcp\conftest.py", line 172, in pytest_runtest_makereport
+    page.screenshot(path=str(path), full_page=True)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9819, in screenshot
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.screenshot(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 814, in screenshot
+    encoded_binary = await self._channel.send(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+        "screenshot", self._timeout_settings.timeout, params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\aseem\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.screenshot: Target page, context or browser has been closed
+2026-02-12 22:11:29 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[-SomePassword123!-empty_email] (16.306s)
+2026-02-12 22:11:29 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[fake.user@example.com--empty_password]
+2026-02-12 22:12:02 [INFO] conftest: === pytest session start ===
+2026-02-12 22:12:02 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-12 22:12:02 [INFO] conftest: platform=win32
+2026-02-12 22:12:02 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-12 22:12:02 [INFO] conftest: START tests/test_login.py::test_login_ui_visible
+2026-02-12 22:12:04 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[fake.user@example.com--empty_password]_20260212T164201Z.png
+2026-02-12 22:12:04 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[fake.user@example.com--empty_password] (31.111s)
+2026-02-12 22:12:04 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[--both_empty]
+2026-02-12 22:12:20 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_ui_visible_20260212T164219Z.png
+2026-02-12 22:12:20 [ERROR] conftest: FAIL  tests/test_login.py::test_login_ui_visible (16.272s)
+2026-02-12 22:12:20 [INFO] conftest: START tests/test_login.py::test_login_button_disabled_when_empty
+2026-02-12 22:12:38 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[--both_empty]_20260212T164235Z.png
+2026-02-12 22:12:38 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[--both_empty] (31.164s)
+2026-02-12 22:12:38 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[not-an-email-SomePassword123!-invalid_email_format]
+2026-02-12 22:12:55 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_button_disabled_when_empty_20260212T164252Z.png
+2026-02-12 22:12:55 [ERROR] conftest: FAIL  tests/test_login.py::test_login_button_disabled_when_empty (31.422s)
+2026-02-12 22:12:55 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[fake.user@example.com-wrong-password-wrong_password]
+2026-02-12 22:13:11 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[not-an-email-SomePassword123!-invalid_email_format]_20260212T164311Z.png
+2026-02-12 22:13:11 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[not-an-email-SomePassword123!-invalid_email_format] (31.542s)
+2026-02-12 22:13:11 [INFO] conftest: START tests/test_login.py::test_valid_login_redirects_to_dashboard
+2026-02-12 22:13:12 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_valid_login_redirects_to_dashboard_20260212T164311Z.png
+2026-02-12 22:13:12 [WARNING] conftest: SKIP  tests/test_login.py::test_valid_login_redirects_to_dashboard (0.000s)
+2026-02-12 22:13:12 [INFO] conftest: START tests/test_login.py::test_session_persists_on_refresh
+2026-02-12 22:13:12 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_session_persists_on_refresh_20260212T164312Z.png
+2026-02-12 22:13:12 [WARNING] conftest: SKIP  tests/test_login.py::test_session_persists_on_refresh (0.000s)
+2026-02-12 22:13:12 [INFO] conftest: START tests/test_login.py::test_logout_returns_to_login_page
+2026-02-12 22:13:13 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_logout_returns_to_login_page_20260212T164312Z.png
+2026-02-12 22:13:13 [WARNING] conftest: SKIP  tests/test_login.py::test_logout_returns_to_login_page (0.000s)
+2026-02-12 22:13:13 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-12 22:13:27 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[fake.user@example.com-wrong-password-wrong_password]_20260212T164327Z.png
+2026-02-12 22:13:27 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[fake.user@example.com-wrong-password-wrong_password] (31.497s)
+2026-02-12 22:13:27 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[wrong.user@example.com-SomePassword123!-wrong_email]
+2026-02-12 22:13:59 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[wrong.user@example.com-SomePassword123!-wrong_email]_20260212T164359Z.png
+2026-02-12 22:13:59 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[wrong.user@example.com-SomePassword123!-wrong_email] (31.070s)
+2026-02-12 22:13:59 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[-SomePassword123!-empty_email]
+2026-02-12 22:14:32 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[-SomePassword123!-empty_email]_20260212T164432Z.png
+2026-02-12 22:14:32 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[-SomePassword123!-empty_email] (31.414s)
+2026-02-12 22:14:32 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[fake.user@example.com--empty_password]
+2026-02-12 22:15:04 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[fake.user@example.com--empty_password]_20260212T164504Z.png
+2026-02-12 22:15:04 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[fake.user@example.com--empty_password] (31.239s)
+2026-02-12 22:15:04 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[--both_empty]
+2026-02-12 22:15:37 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[--both_empty]_20260212T164537Z.png
+2026-02-12 22:15:37 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[--both_empty] (31.735s)
+2026-02-12 22:15:37 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[not-an-email-SomePassword123!-invalid_email_format]
+2026-02-12 22:16:13 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[not-an-email-SomePassword123!-invalid_email_format]_20260212T164610Z.png
+2026-02-12 22:16:13 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[not-an-email-SomePassword123!-invalid_email_format] (31.647s)
+2026-02-12 22:16:13 [INFO] conftest: START tests/test_login.py::test_valid_login_redirects_to_dashboard
+2026-02-12 22:16:13 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_valid_login_redirects_to_dashboard_20260212T164613Z.png
+2026-02-12 22:16:13 [WARNING] conftest: SKIP  tests/test_login.py::test_valid_login_redirects_to_dashboard (0.000s)
+2026-02-12 22:16:13 [INFO] conftest: START tests/test_login.py::test_session_persists_on_refresh
+2026-02-12 22:16:14 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_session_persists_on_refresh_20260212T164614Z.png
+2026-02-12 22:16:14 [WARNING] conftest: SKIP  tests/test_login.py::test_session_persists_on_refresh (0.000s)
+2026-02-12 22:16:14 [INFO] conftest: START tests/test_login.py::test_logout_returns_to_login_page
+2026-02-12 22:16:15 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_logout_returns_to_login_page_20260212T164614Z.png
+2026-02-12 22:16:15 [WARNING] conftest: SKIP  tests/test_login.py::test_logout_returns_to_login_page (0.000s)
+2026-02-12 22:16:15 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-12 22:22:18 [INFO] conftest: === pytest session start ===
+2026-02-12 22:22:18 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-12 22:22:18 [INFO] conftest: platform=win32
+2026-02-12 22:22:18 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-12 22:22:18 [INFO] conftest: START tests/test_dashboard_buttons.py::test_dashboard_buttons_and_sidebar_navigation
+2026-02-12 22:22:49 [INFO] conftest: PASS  tests/test_dashboard_buttons.py::test_dashboard_buttons_and_sidebar_navigation (29.987s)
+2026-02-12 22:22:49 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-12 22:24:33 [INFO] conftest: === pytest session start ===
+2026-02-12 22:24:33 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-12 22:24:33 [INFO] conftest: platform=win32
+2026-02-12 22:24:33 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-12 22:24:33 [INFO] conftest: START tests/test_dashboard_buttons.py::test_dashboard_buttons_and_sidebar_navigation
+2026-02-12 22:25:06 [INFO] conftest: PASS  tests/test_dashboard_buttons.py::test_dashboard_buttons_and_sidebar_navigation (32.103s)
+2026-02-12 22:25:06 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-12 22:30:27 [INFO] conftest: === pytest session start ===
+2026-02-12 22:30:27 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-12 22:30:27 [INFO] conftest: platform=win32
+2026-02-12 22:30:27 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-12 22:30:27 [INFO] conftest: START tests/test_dashboard.py::test_dashboard_smoke
+2026-02-12 22:30:31 [INFO] conftest: PASS  tests/test_dashboard.py::test_dashboard_smoke (3.188s)
+2026-02-12 22:30:31 [INFO] conftest: START tests/test_dashboard_buttons.py::test_dashboard_buttons_and_sidebar_navigation
+2026-02-12 22:31:07 [INFO] conftest: PASS  tests/test_dashboard_buttons.py::test_dashboard_buttons_and_sidebar_navigation (35.894s)
+2026-02-12 22:31:07 [INFO] conftest: START tests/test_login.py::test_login_ui_visible
+2026-02-12 22:31:23 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_ui_visible_20260212T170123Z.png
+2026-02-12 22:31:23 [ERROR] conftest: FAIL  tests/test_login.py::test_login_ui_visible (16.030s)
+2026-02-12 22:31:23 [INFO] conftest: START tests/test_login.py::test_login_button_disabled_when_empty
+2026-02-12 22:31:55 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_button_disabled_when_empty_20260212T170155Z.png
+2026-02-12 22:31:55 [ERROR] conftest: FAIL  tests/test_login.py::test_login_button_disabled_when_empty (31.057s)
+2026-02-12 22:31:55 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[fake.user@example.com-wrong-password-wrong_password]
+2026-02-12 22:32:27 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[fake.user@example.com-wrong-password-wrong_password]_20260212T170227Z.png
+2026-02-12 22:32:27 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[fake.user@example.com-wrong-password-wrong_password] (31.791s)
+2026-02-12 22:32:27 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[wrong.user@example.com-SomePassword123!-wrong_email]
+2026-02-12 22:32:59 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[wrong.user@example.com-SomePassword123!-wrong_email]_20260212T170258Z.png
+2026-02-12 22:32:59 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[wrong.user@example.com-SomePassword123!-wrong_email] (31.542s)
+2026-02-12 22:32:59 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[-SomePassword123!-empty_email]
+2026-02-12 22:33:30 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[-SomePassword123!-empty_email]_20260212T170330Z.png
+2026-02-12 22:33:30 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[-SomePassword123!-empty_email] (30.967s)
+2026-02-12 22:33:30 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[fake.user@example.com--empty_password]
+2026-02-12 22:34:02 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[fake.user@example.com--empty_password]_20260212T170402Z.png
+2026-02-12 22:34:02 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[fake.user@example.com--empty_password] (31.217s)
+2026-02-12 22:34:02 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[--both_empty]
+2026-02-12 22:34:34 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[--both_empty]_20260212T170433Z.png
+2026-02-12 22:34:34 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[--both_empty] (31.125s)
+2026-02-12 22:34:34 [INFO] conftest: START tests/test_login.py::test_login_negative_cases[not-an-email-SomePassword123!-invalid_email_format]
+2026-02-12 22:35:06 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_login_negative_cases[not-an-email-SomePassword123!-invalid_email_format]_20260212T170506Z.png
+2026-02-12 22:35:06 [ERROR] conftest: FAIL  tests/test_login.py::test_login_negative_cases[not-an-email-SomePassword123!-invalid_email_format] (31.399s)
+2026-02-12 22:35:06 [INFO] conftest: START tests/test_login.py::test_valid_login_redirects_to_dashboard
+2026-02-12 22:35:06 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_valid_login_redirects_to_dashboard_20260212T170506Z.png
+2026-02-12 22:35:06 [WARNING] conftest: SKIP  tests/test_login.py::test_valid_login_redirects_to_dashboard (0.000s)
+2026-02-12 22:35:06 [INFO] conftest: START tests/test_login.py::test_session_persists_on_refresh
+2026-02-12 22:35:07 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_session_persists_on_refresh_20260212T170507Z.png
+2026-02-12 22:35:07 [WARNING] conftest: SKIP  tests/test_login.py::test_session_persists_on_refresh (0.000s)
+2026-02-12 22:35:07 [INFO] conftest: START tests/test_login.py::test_logout_returns_to_login_page
+2026-02-12 22:35:07 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_logout_returns_to_login_page_20260212T170507Z.png
+2026-02-12 22:35:07 [WARNING] conftest: SKIP  tests/test_login.py::test_logout_returns_to_login_page (0.001s)
+2026-02-12 22:35:07 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-12 22:37:00 [INFO] conftest: === pytest session start ===
+2026-02-12 22:37:00 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-12 22:37:00 [INFO] conftest: platform=win32
+2026-02-12 22:37:00 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-12 22:37:00 [INFO] conftest: START tests/test_dashboard_buttons.py::test_dashboard_buttons_and_sidebar_navigation
+2026-02-12 22:37:34 [INFO] conftest: PASS  tests/test_dashboard_buttons.py::test_dashboard_buttons_and_sidebar_navigation (32.852s)
+2026-02-12 22:37:34 [INFO] conftest: START tests/test_login.py::test_valid_login_redirects_to_dashboard
+2026-02-12 22:37:34 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_login.py_test_valid_login_redirects_to_dashboard_20260212T170734Z.png
+2026-02-12 22:37:34 [WARNING] conftest: SKIP  tests/test_login.py::test_valid_login_redirects_to_dashboard (0.000s)
+2026-02-12 22:37:34 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-13 23:25:46 [INFO] conftest: === pytest session start ===
+2026-02-13 23:25:46 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-13 23:25:46 [INFO] conftest: platform=win32
+2026-02-13 23:25:46 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-13 23:25:46 [INFO] conftest: START tests/test_resume.py::test_resumes_add_new_resume_modal_validation
+2026-02-13 23:26:25 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_resume.py_test_resumes_add_new_resume_modal_validation_20260213T175625Z.png
+2026-02-13 23:26:25 [ERROR] conftest: FAIL  tests/test_resume.py::test_resumes_add_new_resume_modal_validation (22.801s)
+2026-02-13 23:26:25 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-13 23:27:46 [INFO] conftest: === pytest session start ===
+2026-02-13 23:27:46 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-13 23:27:46 [INFO] conftest: platform=win32
+2026-02-13 23:27:46 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-13 23:27:46 [INFO] conftest: START tests/test_resume.py::test_resumes_add_new_resume_modal_validation
+2026-02-13 23:27:53 [INFO] conftest: PASS  tests/test_resume.py::test_resumes_add_new_resume_modal_validation (6.609s)
+2026-02-13 23:27:53 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-13 23:30:10 [INFO] conftest: === pytest session start ===
+2026-02-13 23:30:10 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-13 23:30:10 [INFO] conftest: platform=win32
+2026-02-13 23:30:10 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-13 23:30:10 [INFO] conftest: START tests/test_dashboard.py::test_dashboard_smoke
+2026-02-13 23:30:13 [INFO] conftest: PASS  tests/test_dashboard.py::test_dashboard_smoke (2.221s)
+2026-02-13 23:30:13 [INFO] conftest: START tests/test_login.py::test_democandidate_smoke_stub_login
+2026-02-13 23:30:15 [INFO] conftest: PASS  tests/test_login.py::test_democandidate_smoke_stub_login (2.090s)
+2026-02-13 23:30:15 [INFO] conftest: START tests/test_resume.py::test_resumes_add_new_resume_modal_validation
+2026-02-13 23:30:22 [INFO] conftest: PASS  tests/test_resume.py::test_resumes_add_new_resume_modal_validation (6.404s)
+2026-02-13 23:30:22 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-13 23:32:50 [INFO] conftest: === pytest session start ===
+2026-02-13 23:32:50 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-13 23:32:50 [INFO] conftest: platform=win32
+2026-02-13 23:32:50 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-13 23:32:50 [INFO] conftest: START tests/test_dashboard.py::test_dashboard_smoke
+2026-02-13 23:33:08 [INFO] conftest: PASS  tests/test_dashboard.py::test_dashboard_smoke (3.026s)
+2026-02-13 23:33:08 [INFO] conftest: START tests/test_login.py::test_democandidate_smoke_stub_login
+2026-02-13 23:33:10 [INFO] conftest: PASS  tests/test_login.py::test_democandidate_smoke_stub_login (1.851s)
+2026-02-13 23:33:10 [INFO] conftest: START tests/test_resume.py::test_resumes_add_new_resume_modal_validation
+2026-02-13 23:33:17 [INFO] conftest: PASS  tests/test_resume.py::test_resumes_add_new_resume_modal_validation (6.865s)
+2026-02-13 23:33:17 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-13 23:39:17 [INFO] conftest: === pytest session start ===
+2026-02-13 23:39:17 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-13 23:39:17 [INFO] conftest: platform=win32
+2026-02-13 23:39:17 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-13 23:39:17 [INFO] conftest: START tests/test_profile.py::test_profile_page_smoke
+2026-02-13 23:39:28 [INFO] conftest: PASS  tests/test_profile.py::test_profile_page_smoke (10.292s)
+2026-02-13 23:39:29 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-16 11:49:42 [INFO] conftest: === pytest session start ===
+2026-02-16 11:49:42 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-16 11:49:42 [INFO] conftest: platform=win32
+2026-02-16 11:49:42 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-16 11:49:42 [INFO] conftest: START tests/test_jobs.py::test_navigate_to_jobs_page
+2026-02-16 11:49:57 [INFO] conftest: PASS  tests/test_jobs.py::test_navigate_to_jobs_page (4.335s)
+2026-02-16 11:49:57 [INFO] conftest: START tests/test_jobs.py::test_verify_jobs_page_elements
+2026-02-16 11:50:13 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_verify_jobs_page_elements_20260216T062013Z.png
+2026-02-16 11:50:13 [ERROR] conftest: FAIL  tests/test_jobs.py::test_verify_jobs_page_elements (16.218s)
+2026-02-16 11:50:13 [INFO] conftest: START tests/test_jobs.py::test_take_mock_interview_button
+2026-02-16 11:50:19 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_take_mock_interview_button_20260216T062019Z.png
+2026-02-16 11:50:19 [ERROR] conftest: FAIL  tests/test_jobs.py::test_take_mock_interview_button (6.084s)
+2026-02-16 11:50:19 [INFO] conftest: START tests/test_jobs.py::test_enhance_resume_button
+2026-02-16 11:50:25 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_enhance_resume_button_20260216T062025Z.png
+2026-02-16 11:50:25 [ERROR] conftest: FAIL  tests/test_jobs.py::test_enhance_resume_button (6.178s)
+2026-02-16 11:50:25 [INFO] conftest: START tests/test_jobs.py::test_delete_job_button
+2026-02-16 11:50:32 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_delete_job_button_20260216T062032Z.png
+2026-02-16 11:50:32 [ERROR] conftest: FAIL  tests/test_jobs.py::test_delete_job_button (6.139s)
+2026-02-16 11:50:32 [INFO] conftest: START tests/test_jobs.py::test_search_job_modal_open
+2026-02-16 11:50:33 [INFO] conftest: PASS  tests/test_jobs.py::test_search_job_modal_open (1.452s)
+2026-02-16 11:50:33 [INFO] conftest: START tests/test_jobs.py::test_search_job_input
+2026-02-16 11:50:35 [INFO] conftest: PASS  tests/test_jobs.py::test_search_job_input (1.477s)
+2026-02-16 11:50:35 [INFO] conftest: START tests/test_jobs.py::test_search_job_filters
+2026-02-16 11:50:51 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_search_job_filters_20260216T062051Z.png
+2026-02-16 11:50:51 [ERROR] conftest: FAIL  tests/test_jobs.py::test_search_job_filters (16.352s)
+2026-02-16 11:50:51 [INFO] conftest: START tests/test_jobs.py::test_search_job_results_visible
+2026-02-16 11:51:08 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_search_job_results_visible_20260216T062108Z.png
+2026-02-16 11:51:08 [ERROR] conftest: FAIL  tests/test_jobs.py::test_search_job_results_visible (16.329s)
+2026-02-16 11:51:08 [INFO] conftest: === pytest session finish (exitstatus=1) ===
