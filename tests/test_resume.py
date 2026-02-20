@@ -67,3 +67,19 @@ def test_resumes_add_new_resume_modal_validation(page, base_url):
     page.wait_for_timeout(500)
     resumes.take_screenshot("resume_06_modal_closed")
 
+
+@pytest.mark.resume
+def test_resumes_upload_resume(page, base_url):
+    """
+    Upload a resume: Add New Resume -> fill Target Role, upload test_resume.pdf -> Add Resume -> verify card and screenshot.
+    """
+    resumes = ResumePage(page, base_url)
+    resumes.goto("/dashboard/resumes", wait_until="domcontentloaded")
+    if re.search(r"/login\b|/signin\b|/auth\b", page.url, re.I):
+        LoginPage(page, base_url).assert_login_ui_present_stub()
+        pytest.skip("Resume upload requires authentication; login UI verified (stub).")
+
+    screenshot_path = resumes.upload_resume()
+    assert screenshot_path.exists(), f"Expected screenshot at {screenshot_path}"
+    assert screenshot_path.name == "resume_uploaded.png"
+

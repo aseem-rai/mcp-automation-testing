@@ -383,3 +383,228 @@ playwright._impl._errors.TargetClosedError: Page.screenshot: Target page, contex
 2026-02-16 11:51:08 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_search_job_results_visible_20260216T062108Z.png
 2026-02-16 11:51:08 [ERROR] conftest: FAIL  tests/test_jobs.py::test_search_job_results_visible (16.329s)
 2026-02-16 11:51:08 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 08:48:23 [INFO] conftest: === pytest session start ===
+2026-02-20 08:48:23 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 08:48:23 [INFO] conftest: platform=win32
+2026-02-20 08:48:23 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 08:48:23 [INFO] conftest: START tests/test_jobs.py::test_navigate_to_jobs_page
+2026-02-20 08:48:46 [INFO] conftest: PASS  tests/test_jobs.py::test_navigate_to_jobs_page (4.612s)
+2026-02-20 08:48:46 [INFO] conftest: START tests/test_jobs.py::test_verify_jobs_page_elements
+2026-02-20 08:48:48 [INFO] conftest: PASS  tests/test_jobs.py::test_verify_jobs_page_elements (1.867s)
+2026-02-20 08:48:48 [INFO] conftest: START tests/test_jobs.py::test_take_mock_interview_button
+2026-02-20 08:49:00 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_take_mock_interview_button_20260220T031900Z.png
+2026-02-20 08:49:00 [ERROR] conftest: FAIL  tests/test_jobs.py::test_take_mock_interview_button (11.660s)
+2026-02-20 08:49:00 [INFO] conftest: START tests/test_jobs.py::test_enhance_resume_button
+2026-02-20 08:49:12 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_enhance_resume_button_20260220T031912Z.png
+2026-02-20 08:49:12 [ERROR] conftest: FAIL  tests/test_jobs.py::test_enhance_resume_button (11.559s)
+2026-02-20 08:49:12 [INFO] conftest: START tests/test_jobs.py::test_delete_job_button
+2026-02-20 08:49:24 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_delete_job_button_20260220T031924Z.png
+2026-02-20 08:49:24 [ERROR] conftest: FAIL  tests/test_jobs.py::test_delete_job_button (12.280s)
+2026-02-20 08:49:24 [INFO] conftest: START tests/test_jobs.py::test_search_job_modal_open
+2026-02-20 08:49:26 [INFO] conftest: PASS  tests/test_jobs.py::test_search_job_modal_open (1.956s)
+2026-02-20 08:49:26 [INFO] conftest: START tests/test_jobs.py::test_search_job_input
+2026-02-20 08:49:29 [INFO] conftest: PASS  tests/test_jobs.py::test_search_job_input (2.968s)
+2026-02-20 08:49:29 [INFO] conftest: START tests/test_jobs.py::test_search_job_filters
+2026-02-20 08:49:32 [INFO] conftest: PASS  tests/test_jobs.py::test_search_job_filters (3.038s)
+2026-02-20 08:49:32 [INFO] conftest: START tests/test_jobs.py::test_search_job_results_visible
+2026-02-20 08:49:35 [INFO] conftest: PASS  tests/test_jobs.py::test_search_job_results_visible (2.533s)
+2026-02-20 08:49:35 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 09:00:21 [INFO] conftest: === pytest session start ===
+2026-02-20 09:00:21 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:00:21 [INFO] conftest: platform=win32
+2026-02-20 09:00:21 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:00:21 [INFO] conftest: START tests/test_jobs.py::test_navigate_to_jobs_page
+2026-02-20 09:00:26 [INFO] conftest: PASS  tests/test_jobs.py::test_navigate_to_jobs_page (4.351s)
+2026-02-20 09:00:26 [INFO] conftest: START tests/test_jobs.py::test_verify_jobs_page_elements
+2026-02-20 09:00:28 [INFO] conftest: PASS  tests/test_jobs.py::test_verify_jobs_page_elements (1.749s)
+2026-02-20 09:00:28 [INFO] conftest: START tests/test_jobs.py::test_take_mock_interview_button
+2026-02-20 09:00:40 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_take_mock_interview_button_20260220T033040Z.png
+2026-02-20 09:00:40 [ERROR] conftest: FAIL  tests/test_jobs.py::test_take_mock_interview_button (12.340s)
+2026-02-20 09:00:40 [INFO] conftest: START tests/test_jobs.py::test_enhance_resume_button
+2026-02-20 09:00:53 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_enhance_resume_button_20260220T033053Z.png
+2026-02-20 09:00:53 [ERROR] conftest: FAIL  tests/test_jobs.py::test_enhance_resume_button (12.338s)
+2026-02-20 09:00:53 [INFO] conftest: START tests/test_jobs.py::test_delete_job_button
+2026-02-20 09:01:07 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_delete_job_button_20260220T033107Z.png
+2026-02-20 09:01:07 [ERROR] conftest: FAIL  tests/test_jobs.py::test_delete_job_button (13.436s)
+2026-02-20 09:01:07 [INFO] conftest: START tests/test_jobs.py::test_search_job_modal_open
+2026-02-20 09:01:09 [INFO] conftest: PASS  tests/test_jobs.py::test_search_job_modal_open (1.967s)
+2026-02-20 09:01:09 [INFO] conftest: START tests/test_jobs.py::test_search_job_input
+2026-02-20 09:01:11 [INFO] conftest: PASS  tests/test_jobs.py::test_search_job_input (1.988s)
+2026-02-20 09:01:11 [INFO] conftest: START tests/test_jobs.py::test_search_job_filters
+2026-02-20 09:01:14 [INFO] conftest: PASS  tests/test_jobs.py::test_search_job_filters (2.906s)
+2026-02-20 09:01:14 [INFO] conftest: START tests/test_jobs.py::test_search_job_results_visible
+2026-02-20 09:01:16 [INFO] conftest: PASS  tests/test_jobs.py::test_search_job_results_visible (1.845s)
+2026-02-20 09:01:16 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 09:02:16 [INFO] conftest: === pytest session start ===
+2026-02-20 09:02:16 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:02:16 [INFO] conftest: platform=win32
+2026-02-20 09:02:16 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:02:16 [INFO] conftest: START tests/test_jobs.py::test_take_mock_interview_button
+2026-02-20 09:02:31 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_take_mock_interview_button_20260220T033230Z.png
+2026-02-20 09:02:31 [ERROR] conftest: FAIL  tests/test_jobs.py::test_take_mock_interview_button (12.916s)
+2026-02-20 09:02:31 [INFO] conftest: START tests/test_jobs.py::test_enhance_resume_button
+2026-02-20 09:02:43 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_enhance_resume_button_20260220T033243Z.png
+2026-02-20 09:02:43 [ERROR] conftest: FAIL  tests/test_jobs.py::test_enhance_resume_button (11.795s)
+2026-02-20 09:02:43 [INFO] conftest: START tests/test_jobs.py::test_delete_job_button
+2026-02-20 09:02:55 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_delete_job_button_20260220T033255Z.png
+2026-02-20 09:02:55 [ERROR] conftest: FAIL  tests/test_jobs.py::test_delete_job_button (11.679s)
+2026-02-20 09:02:55 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 09:04:44 [INFO] conftest: === pytest session start ===
+2026-02-20 09:04:44 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:04:44 [INFO] conftest: platform=win32
+2026-02-20 09:04:44 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:04:44 [INFO] conftest: START tests/test_jobs.py::test_take_mock_interview_button
+2026-02-20 09:04:58 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_take_mock_interview_button_20260220T033458Z.png
+2026-02-20 09:04:58 [ERROR] conftest: FAIL  tests/test_jobs.py::test_take_mock_interview_button (12.747s)
+2026-02-20 09:04:58 [INFO] conftest: START tests/test_jobs.py::test_enhance_resume_button
+2026-02-20 09:05:10 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_enhance_resume_button_20260220T033510Z.png
+2026-02-20 09:05:10 [ERROR] conftest: FAIL  tests/test_jobs.py::test_enhance_resume_button (11.644s)
+2026-02-20 09:05:10 [INFO] conftest: START tests/test_jobs.py::test_delete_job_button
+2026-02-20 09:05:22 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_jobs.py_test_delete_job_button_20260220T033522Z.png
+2026-02-20 09:05:22 [ERROR] conftest: FAIL  tests/test_jobs.py::test_delete_job_button (11.575s)
+2026-02-20 09:05:22 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 09:26:48 [INFO] conftest: === pytest session start ===
+2026-02-20 09:26:48 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:26:48 [INFO] conftest: platform=win32
+2026-02-20 09:26:48 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:26:48 [INFO] conftest: START tests/test_resume.py::test_resumes_add_new_resume_modal_validation
+2026-02-20 09:26:58 [INFO] conftest: PASS  tests/test_resume.py::test_resumes_add_new_resume_modal_validation (8.654s)
+2026-02-20 09:26:58 [INFO] conftest: START tests/test_resume.py::test_resumes_upload_resume
+2026-02-20 09:27:15 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_resume.py_test_resumes_upload_resume_20260220T035715Z.png
+2026-02-20 09:27:15 [ERROR] conftest: FAIL  tests/test_resume.py::test_resumes_upload_resume (16.789s)
+2026-02-20 09:27:15 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 09:27:44 [INFO] conftest: === pytest session start ===
+2026-02-20 09:27:44 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:27:44 [INFO] conftest: platform=win32
+2026-02-20 09:27:44 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:27:44 [INFO] conftest: START tests/test_resume.py::test_resumes_upload_resume
+2026-02-20 09:27:58 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_resume.py_test_resumes_upload_resume_20260220T035758Z.png
+2026-02-20 09:27:58 [ERROR] conftest: FAIL  tests/test_resume.py::test_resumes_upload_resume (12.631s)
+2026-02-20 09:27:58 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 09:28:22 [INFO] conftest: === pytest session start ===
+2026-02-20 09:28:22 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:28:22 [INFO] conftest: platform=win32
+2026-02-20 09:28:22 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:28:22 [INFO] conftest: START tests/test_resume.py::test_resumes_upload_resume
+2026-02-20 09:28:35 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_resume.py_test_resumes_upload_resume_20260220T035835Z.png
+2026-02-20 09:28:35 [ERROR] conftest: FAIL  tests/test_resume.py::test_resumes_upload_resume (12.402s)
+2026-02-20 09:28:35 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 09:29:10 [INFO] conftest: === pytest session start ===
+2026-02-20 09:29:10 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:29:10 [INFO] conftest: platform=win32
+2026-02-20 09:29:10 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:29:10 [INFO] conftest: START tests/test_resume.py::test_resumes_upload_resume
+2026-02-20 09:29:18 [INFO] conftest: PASS  tests/test_resume.py::test_resumes_upload_resume (7.846s)
+2026-02-20 09:29:18 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-20 09:29:33 [INFO] conftest: === pytest session start ===
+2026-02-20 09:29:33 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:29:33 [INFO] conftest: platform=win32
+2026-02-20 09:29:33 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:29:33 [INFO] conftest: START tests/test_resume.py::test_resumes_add_new_resume_modal_validation
+2026-02-20 09:29:39 [INFO] conftest: PASS  tests/test_resume.py::test_resumes_add_new_resume_modal_validation (5.826s)
+2026-02-20 09:29:39 [INFO] conftest: START tests/test_resume.py::test_resumes_upload_resume
+2026-02-20 09:29:47 [INFO] conftest: PASS  tests/test_resume.py::test_resumes_upload_resume (7.521s)
+2026-02-20 09:29:47 [INFO] conftest: === pytest session finish (exitstatus=0) ===
+2026-02-20 09:50:14 [INFO] conftest: === pytest session start ===
+2026-02-20 09:50:14 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:50:14 [INFO] conftest: platform=win32
+2026-02-20 09:50:14 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:50:14 [INFO] conftest: START tests/test_preps.py::test_open_preps_page
+2026-02-20 09:50:19 [INFO] conftest: PASS  tests/test_preps.py::test_open_preps_page (4.216s)
+2026-02-20 09:50:19 [INFO] conftest: START tests/test_preps.py::test_create_jd
+2026-02-20 09:50:36 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_create_jd_20260220T042036Z.png
+2026-02-20 09:50:36 [ERROR] conftest: FAIL  tests/test_preps.py::test_create_jd (16.384s)
+2026-02-20 09:50:36 [INFO] conftest: START tests/test_preps.py::test_upload_jd
+2026-02-20 09:50:52 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_upload_jd_20260220T042052Z.png
+2026-02-20 09:50:52 [ERROR] conftest: FAIL  tests/test_preps.py::test_upload_jd (16.368s)
+2026-02-20 09:50:52 [INFO] conftest: START tests/test_preps.py::test_verify_prep_buttons
+2026-02-20 09:51:04 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_verify_prep_buttons_20260220T042104Z.png
+2026-02-20 09:51:04 [ERROR] conftest: FAIL  tests/test_preps.py::test_verify_prep_buttons (11.473s)
+2026-02-20 09:51:04 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 09:52:54 [INFO] conftest: === pytest session start ===
+2026-02-20 09:52:54 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:52:54 [INFO] conftest: platform=win32
+2026-02-20 09:52:54 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:52:54 [INFO] conftest: START tests/test_preps.py::test_open_preps_page
+2026-02-20 09:52:56 [INFO] conftest: PASS  tests/test_preps.py::test_open_preps_page (1.431s)
+2026-02-20 09:52:56 [INFO] conftest: START tests/test_preps.py::test_create_jd
+2026-02-20 09:53:14 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_create_jd_20260220T042314Z.png
+2026-02-20 09:53:14 [ERROR] conftest: FAIL  tests/test_preps.py::test_create_jd (17.386s)
+2026-02-20 09:53:14 [INFO] conftest: START tests/test_preps.py::test_upload_jd
+2026-02-20 09:53:31 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_upload_jd_20260220T042330Z.png
+2026-02-20 09:53:31 [ERROR] conftest: FAIL  tests/test_preps.py::test_upload_jd (16.431s)
+2026-02-20 09:53:31 [INFO] conftest: START tests/test_preps.py::test_verify_prep_buttons
+2026-02-20 09:53:42 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_verify_prep_buttons_20260220T042342Z.png
+2026-02-20 09:53:42 [ERROR] conftest: FAIL  tests/test_preps.py::test_verify_prep_buttons (11.586s)
+2026-02-20 09:53:42 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 09:54:26 [INFO] conftest: === pytest session start ===
+2026-02-20 09:54:26 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:54:26 [INFO] conftest: platform=win32
+2026-02-20 09:54:26 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:54:26 [INFO] conftest: START tests/test_preps.py::test_open_preps_page
+2026-02-20 09:54:29 [INFO] conftest: PASS  tests/test_preps.py::test_open_preps_page (2.045s)
+2026-02-20 09:54:29 [INFO] conftest: START tests/test_preps.py::test_create_jd
+2026-02-20 09:54:47 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_create_jd_20260220T042446Z.png
+2026-02-20 09:54:47 [ERROR] conftest: FAIL  tests/test_preps.py::test_create_jd (16.963s)
+2026-02-20 09:54:47 [INFO] conftest: START tests/test_preps.py::test_upload_jd
+2026-02-20 09:55:04 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_upload_jd_20260220T042504Z.png
+2026-02-20 09:55:04 [ERROR] conftest: FAIL  tests/test_preps.py::test_upload_jd (16.853s)
+2026-02-20 09:55:04 [INFO] conftest: START tests/test_preps.py::test_verify_prep_buttons
+2026-02-20 09:55:16 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_verify_prep_buttons_20260220T042516Z.png
+2026-02-20 09:55:16 [ERROR] conftest: FAIL  tests/test_preps.py::test_verify_prep_buttons (11.962s)
+2026-02-20 09:55:16 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 09:57:25 [INFO] conftest: === pytest session start ===
+2026-02-20 09:57:25 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:57:25 [INFO] conftest: platform=win32
+2026-02-20 09:57:25 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:57:25 [INFO] conftest: START tests/test_preps.py::test_open_preps_page
+2026-02-20 09:57:28 [INFO] conftest: PASS  tests/test_preps.py::test_open_preps_page (2.584s)
+2026-02-20 09:57:28 [INFO] conftest: START tests/test_preps.py::test_create_jd
+2026-02-20 09:57:46 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_create_jd_20260220T042746Z.png
+2026-02-20 09:57:46 [ERROR] conftest: FAIL  tests/test_preps.py::test_create_jd (16.984s)
+2026-02-20 09:57:46 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 09:59:20 [INFO] conftest: === pytest session start ===
+2026-02-20 09:59:20 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 09:59:20 [INFO] conftest: platform=win32
+2026-02-20 09:59:20 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 09:59:20 [INFO] conftest: START tests/test_preps.py::test_open_preps_page
+2026-02-20 09:59:23 [INFO] conftest: PASS  tests/test_preps.py::test_open_preps_page (2.019s)
+2026-02-20 09:59:23 [INFO] conftest: START tests/test_preps.py::test_create_jd
+2026-02-20 09:59:41 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_create_jd_20260220T042940Z.png
+2026-02-20 09:59:41 [ERROR] conftest: FAIL  tests/test_preps.py::test_create_jd (17.172s)
+2026-02-20 09:59:41 [INFO] conftest: START tests/test_preps.py::test_upload_jd
+2026-02-20 09:59:58 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_upload_jd_20260220T042958Z.png
+2026-02-20 09:59:58 [ERROR] conftest: FAIL  tests/test_preps.py::test_upload_jd (17.030s)
+2026-02-20 09:59:58 [INFO] conftest: START tests/test_preps.py::test_verify_prep_buttons
+2026-02-20 10:00:11 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_verify_prep_buttons_20260220T043010Z.png
+2026-02-20 10:00:11 [ERROR] conftest: FAIL  tests/test_preps.py::test_verify_prep_buttons (12.046s)
+2026-02-20 10:00:11 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 10:01:09 [INFO] conftest: === pytest session start ===
+2026-02-20 10:01:09 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 10:01:09 [INFO] conftest: platform=win32
+2026-02-20 10:01:09 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 10:01:09 [INFO] conftest: START tests/test_preps.py::test_open_preps_page
+2026-02-20 10:01:12 [INFO] conftest: PASS  tests/test_preps.py::test_open_preps_page (2.333s)
+2026-02-20 10:01:12 [INFO] conftest: START tests/test_preps.py::test_create_jd
+2026-02-20 10:01:29 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_create_jd_20260220T043129Z.png
+2026-02-20 10:01:29 [ERROR] conftest: FAIL  tests/test_preps.py::test_create_jd (17.466s)
+2026-02-20 10:01:29 [INFO] conftest: START tests/test_preps.py::test_upload_jd
+2026-02-20 10:01:47 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_upload_jd_20260220T043147Z.png
+2026-02-20 10:01:47 [ERROR] conftest: FAIL  tests/test_preps.py::test_upload_jd (17.117s)
+2026-02-20 10:01:47 [INFO] conftest: START tests/test_preps.py::test_verify_prep_buttons
+2026-02-20 10:01:59 [INFO] conftest: Saved failure screenshot: results/screenshots/tests_test_preps.py_test_verify_prep_buttons_20260220T043159Z.png
+2026-02-20 10:01:59 [ERROR] conftest: FAIL  tests/test_preps.py::test_verify_prep_buttons (12.039s)
+2026-02-20 10:01:59 [INFO] conftest: === pytest session finish (exitstatus=1) ===
+2026-02-20 10:03:28 [INFO] conftest: === pytest session start ===
+2026-02-20 10:03:28 [INFO] conftest: python=3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]
+2026-02-20 10:03:28 [INFO] conftest: platform=win32
+2026-02-20 10:03:28 [INFO] conftest: base_url=https://democandidate.meetaiva.in
+2026-02-20 10:03:28 [INFO] conftest: START tests/test_preps.py::test_open_preps_page
+2026-02-20 10:03:31 [INFO] conftest: PASS  tests/test_preps.py::test_open_preps_page (1.969s)
+2026-02-20 10:03:31 [INFO] conftest: START tests/test_preps.py::test_create_jd
+2026-02-20 10:03:33 [WARNING] conftest: SKIP  tests/test_preps.py::test_create_jd (1.884s)
+2026-02-20 10:03:33 [INFO] conftest: START tests/test_preps.py::test_upload_jd
+2026-02-20 10:03:35 [WARNING] conftest: SKIP  tests/test_preps.py::test_upload_jd (1.980s)
+2026-02-20 10:03:35 [INFO] conftest: START tests/test_preps.py::test_verify_prep_buttons
+2026-02-20 10:03:38 [WARNING] conftest: SKIP  tests/test_preps.py::test_verify_prep_buttons (2.382s)
+2026-02-20 10:03:38 [INFO] conftest: === pytest session finish (exitstatus=0) ===

@@ -35,6 +35,11 @@ class JobsPage(BasePage):
         return self.page.get_by_text(re.compile(r"\bleast\s+fit\b.*\bjob\b|\bleast\s+fit\b", re.I)).first
 
     @property
+    def job_menu_buttons(self) -> Locator:
+        # 3-dot (kebab) menu buttons on job cards: button containing an SVG icon.
+        return self.page.get_by_role("button").filter(has=self.page.locator("svg"))
+
+    @property
     def take_mock_interview_buttons(self) -> Locator:
         return self.page.get_by_role("button", name=re.compile(r"\btake\b.*\bmock\s+interview\b", re.I))
 
@@ -80,19 +85,19 @@ class JobsPage(BasePage):
 
     @property
     def job_cards(self) -> Locator:
-        # Prefer cards containing the known action button; this anchors on real UI controls.
-        if self.take_mock_interview_buttons.count() > 0:
-            return self.take_mock_interview_buttons.first.locator(
+        # Anchor on 3-dot menu buttons; each job card has one.
+        if self.job_menu_buttons.count() > 0:
+            return self.job_menu_buttons.first.locator(
                 "xpath=ancestor::*[self::article or self::section or self::div][1]"
-            ).locator("xpath=ancestor::*[self::article or self::section or self::div][1]")
-        # Fallback: any element mentioning "job" on the page.
+            )
         return self.page.get_by_text(re.compile(r"\bjob\b", re.I)).first.locator(
             "xpath=ancestor::*[self::article or self::section or self::div][1]"
         )
 
     def _first_job_card_container(self) -> Locator:
-        btn = self.take_mock_interview_buttons.first
-        return btn.locator("xpath=ancestor::*[self::article or self::section or self::div][1]")
+        return self.job_menu_buttons.first.locator(
+            "xpath=ancestor::*[self::article or self::section or self::div][1]"
+        )
 
     @property
     def job_title_headings(self) -> Locator:
@@ -135,11 +140,21 @@ class JobsPage(BasePage):
         expect(self.least_fit_job_card).to_be_visible()
 
     # -----------------------
-    # First job card buttons
+    # First job card buttons (via 3-dot menu)
     # -----------------------
+    def _click_menu_option(self, text_pattern: re.Pattern) -> None:
+        """Click a dropdown option by visible text (menuitem, link, or any element with that text)."""
+        option = self.page.get_by_role("menuitem", name=text_pattern).or_(
+            self.page.get_by_text(text_pattern)
+        ).or_(self.page.locator("li").filter(has_text=text_pattern)).first
+        expect(option).to_be_visible(timeout=10_000)
+        option.click()
+
     def click_take_mock_interview(self) -> None:
-        expect(self.take_mock_interview_buttons.first).to_be_visible()
-        self.take_mock_interview_buttons.first.click()
+        menu = self.job_menu_buttons.first
+        expect(menu).to_be_visible(timeout=15_000)
+        menu.click()
+        self._click_menu_option(re.compile(r"mock\s+interview", re.I))
 
     def verify_mock_interview_started_or_modal(self) -> None:
         # Either navigate to an interview route OR a modal/section becomes visible.
@@ -153,8 +168,10 @@ class JobsPage(BasePage):
         expect(modalish).to_be_visible(timeout=10_000)
 
     def click_enhance_resume(self) -> None:
-        expect(self.enhance_resume_buttons.first).to_be_visible()
-        self.enhance_resume_buttons.first.click()
+        menu = self.job_menu_buttons.first
+        expect(menu).to_be_visible(timeout=15_000)
+        menu.click()
+        self._click_menu_option(re.compile(r"enhance\s+resume", re.I))
 
     def verify_enhance_resume_response(self) -> None:
         # Look for toast/alert/response text.
@@ -172,20 +189,22 @@ class JobsPage(BasePage):
         expect(self.header_jobs).to_be_visible()
 
     def click_delete_job(self) -> None:
-        # Prefer a delete within the first job card if possible.
-        if self.take_mock_interview_buttons.count() > 0:
-            card = self._first_job_card_container()
-            delete_in_card = card.get_by_role("button", name=re.compile(r"\bdelete\b|\bremove\b", re.I))
-            if delete_in_card.count() > 0:
-                delete_in_card.first.click()
-                return
-
-        expect(self.delete_job_buttons.first).to_be_visible()
-        self.delete_job_buttons.first.click()
+        menu = self.job_menu_buttons.first
+        expect(menu).to_be_visible(timeout=15_000)
+        menu.click()
+        self._click_menu_option(re.compile(r"delete\s+job", re.I))
 
     def verify_delete_confirmation(self) -> None:
         expect(self.delete_confirmation_text).to_be_visible(timeout=10_000)
-        # Do not confirm deletion; close/cancel if possible.
+        # If confirmation dialog has Confirm/Yes, click it; otherwise Cancel.
+        confirm_loc = self.page.get_by_role("button", name=re.compile(r"\bconfirm\b|\byes\b|\bdelete\b", re.I))
+        if confirm_loc.count() > 0:
+            try:
+                expect(confirm_loc.first).to_be_visible(timeout=5_000)
+                confirm_loc.first.click()
+                return
+            except Exception:
+                pass
         for name in [re.compile(r"\bcancel\b", re.I), re.compile(r"\bno\b", re.I), re.compile(r"\bclose\b", re.I)]:
             btn = self.page.get_by_role("button", name=name)
             if btn.count() > 0:
@@ -227,8 +246,8 @@ class JobsPage(BasePage):
         self.filter_all.click()
 
     def verify_job_cards_visible(self) -> None:
-        # At least one actionable job card should exist.
-        expect(self.take_mock_interview_buttons.first).to_be_visible(timeout=15_000)
+        # At least one job card exists (has 3-dot menu).
+        expect(self.job_menu_buttons.first).to_be_visible(timeout=15_000)
 
     def verify_job_titles_visible(self) -> None:
         # Ensure there are multiple headings; Jobs page header + job titles.
@@ -241,21 +260,17 @@ class JobsPage(BasePage):
         if companyish.count() > 0:
             expect(companyish.first).to_be_visible(timeout=10_000)
             return
-        # Fallback: ensure some non-empty text in the job list area.
-        expect(self.take_mock_interview_buttons.first).to_be_visible(timeout=10_000)
+        expect(self.job_menu_buttons.first).to_be_visible(timeout=10_000)
 
     def verify_skills_tags_visible(self) -> None:
         # Skills may be empty for some jobs; prefer any chip-like tags.
         if self.skills_tags.count() > 0:
             expect(self.skills_tags.first).to_be_visible(timeout=10_000)
             return
-        expect(self.take_mock_interview_buttons.first).to_be_visible(timeout=10_000)
+        expect(self.job_menu_buttons.first).to_be_visible(timeout=10_000)
 
     def click_first_job_card_and_verify_interaction(self) -> None:
-        # Click the card container (or its first heading) and verify something changes.
-        if self.take_mock_interview_buttons.count() == 0:
-            self.verify_job_cards_visible()
-
+        self.verify_job_cards_visible()
         card = self._first_job_card_container()
         before_url = self.page.url
 
@@ -277,6 +292,32 @@ class JobsPage(BasePage):
         details = self.page.get_by_text(re.compile(r"\bjob\s+details\b|\bdescription\b|\bresponsibilit", re.I))
         if details.count() > 0:
             expect(details.first).to_be_visible(timeout=10_000)
+
+    def add_job_if_none_exists(self) -> None:
+        """If no job cards exist, open search modal, add first job, then refresh Jobs page."""
+        if self.job_menu_buttons.count() > 0:
+            return
+        self.click_search_job_button()
+        self.verify_search_modal_open()
+        # First job card in search modal (article, li, or card-like container).
+        modal = self.page.get_by_role("dialog")
+        expect(modal).to_be_visible(timeout=10_000)
+        cards = modal.locator("article")
+        if cards.count() == 0:
+            cards = modal.locator("li")
+        if cards.count() == 0:
+            cards = modal.locator("[class*='card'], [class*='job']")
+        expect(cards.first).to_be_visible(timeout=10_000)
+        cards.first.click()
+        add_btn = self.page.get_by_role("button", name=re.compile(r"add\s+job", re.I)).first
+        expect(add_btn).to_be_visible(timeout=10_000)
+        add_btn.click()
+        success_msg = self.page.get_by_text(re.compile(r"success|added|job\s+added", re.I)).first
+        expect(success_msg).to_be_visible(timeout=15_000)
+        self.close_search_modal()
+        self.goto_jobs_page()
+        self.verify_jobs_page_loaded()
+        expect(self.job_menu_buttons.first).to_be_visible(timeout=15_000)
 
     def close_search_modal(self) -> None:
         # Escape often closes modals.

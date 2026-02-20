@@ -39,6 +39,7 @@ def test_verify_jobs_page_elements(page, base_url):
 
 def test_take_mock_interview_button(page, base_url):
     jobs = _open_jobs_or_skip(page, base_url)
+    jobs.add_job_if_none_exists()
     jobs.click_take_mock_interview()
     jobs.verify_mock_interview_started_or_modal()
     jobs.take_screenshot("jobs_02_mock_interview")
@@ -46,6 +47,7 @@ def test_take_mock_interview_button(page, base_url):
 
 def test_enhance_resume_button(page, base_url):
     jobs = _open_jobs_or_skip(page, base_url)
+    jobs.add_job_if_none_exists()
     jobs.click_enhance_resume()
     jobs.verify_enhance_resume_response()
     jobs.take_screenshot("jobs_03_enhance_resume")
@@ -53,6 +55,7 @@ def test_enhance_resume_button(page, base_url):
 
 def test_delete_job_button(page, base_url):
     jobs = _open_jobs_or_skip(page, base_url)
+    jobs.add_job_if_none_exists()
     jobs.click_delete_job()
     jobs.verify_delete_confirmation()
     jobs.take_screenshot("jobs_04_delete_confirmation")

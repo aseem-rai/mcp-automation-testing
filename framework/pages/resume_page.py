@@ -4,7 +4,7 @@ import datetime as _dt
 import re
 from pathlib import Path
 
-from playwright.sync_api import Locator, Page
+from playwright.sync_api import Locator, Page, expect
 
 from framework.pages.base_page import BasePage
 
@@ -51,10 +51,12 @@ class ResumePage(BasePage):
 
     @property
     def resume_upload_field(self) -> Locator:
-        # File input is typically <input type=file>.
-        file_input = self.page.locator("input[type='file']")
-        # Some apps use a button to open upload; we still validate presence of file input when modal is open.
-        return file_input.first
+        # File input is typically <input type=file>. Prefer the one inside the modal when open.
+        dialog = self.page.get_by_role("dialog")
+        in_dialog = dialog.locator("input[type='file']")
+        if in_dialog.count() > 0:
+            return in_dialog.first
+        return self.page.locator("input[type='file']").first
 
     @property
     def resume_upload_dropzone(self) -> Locator:
@@ -170,4 +172,37 @@ class ResumePage(BasePage):
         path = screenshots_dir / f"{safe}_{ts}.png"
         self.page.screenshot(path=str(path), full_page=True)
         return path
+
+    # -----------------------
+    # Upload resume flow
+    # -----------------------
+    def upload_resume(self, resume_file_path: str | Path | None = None) -> Path:
+        """Navigate to resumes, add new resume, fill role, upload file, submit, verify card, save screenshot."""
+        if resume_file_path is None:
+            # Default: test_data/test_resume.pdf relative to project root
+            project_root = Path(__file__).resolve().parent.parent.parent
+            resume_file_path = project_root / "test_data" / "test_resume.pdf"
+        path = Path(resume_file_path)
+        if not path.is_absolute():
+            project_root = Path(__file__).resolve().parent.parent.parent
+            path = project_root / path
+
+        self.goto("/dashboard/resumes", wait_until="domcontentloaded")
+        self.verify_loaded()
+        self.click_add_new_resume()
+        self.verify_add_resume_modal_open()
+        self.target_role_field.fill("AI Engineer")
+        self.resume_upload_field.set_input_files(str(path))
+        try:
+            expect(self.add_resume_button).to_be_enabled(timeout=5_000)
+        except Exception:
+            # Some UIs keep the button disabled until change event is processed; click anyway.
+            pass
+        self.add_resume_button.click(force=True)
+        self.verify_resume_cards_present(timeout_ms=15_000)
+        out_dir = Path("results")
+        out_dir.mkdir(parents=True, exist_ok=True)
+        screenshot_path = out_dir / "resume_uploaded.png"
+        self.page.screenshot(path=str(screenshot_path), full_page=True)
+        return screenshot_path
 
