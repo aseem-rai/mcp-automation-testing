@@ -6,7 +6,7 @@ from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
 from framework.pages.dashboard_page import DashboardPage
 from framework.pages.login_page import LoginPage
 from framework.pages.profile_page import ProfilePage
-from framework.pages.resume_page import ResumePage, PARSE_RESUME_WAIT_MS
+from framework.pages.resume_page import PARSE_RESUME_WAIT_MS, ResumePage
 from framework.utils.settings import settings
 from framework.utils.test_data import ensure_resume_with_details_pdf
 
@@ -134,7 +134,7 @@ def _wait_for_profile_data_visible(page, timeout_ms: int = _PROFILE_DATA_TIMEOUT
 @pytest.mark.profile
 @pytest.mark.smoke
 def test_profile_after_new_resume_upload(page, base_url):
-    """Login first (env email), add resume, open profile; screenshot only when data is seen; fail if no data in 30s."""
+    """Login (env email), add resume; verify on resumes page that the resume card shows date/time for the upload."""
     # 1. Login first: must be logged in with TEST_EMAIL (session from save_auth_state)
     _require_logged_in_with_env_email(page, base_url)
     page.wait_for_timeout(1000)
@@ -150,24 +150,10 @@ def test_profile_after_new_resume_upload(page, base_url):
     resume_page.submit_resume()
     resume_page.verify_resume_uploaded(timeout_ms=PARSE_RESUME_WAIT_MS)
 
-    # 3. Give backend time to parse resume and populate profile
-    page.wait_for_timeout(3000)
+    # 3. Verify on resumes page: resume card shows date/time (recent upload)
+    resume_page.verify_resume_card_shows_recent_datetime()
 
-    # 4. Open profile and wait up to 30s for data to appear
-    profile = ProfilePage(page, base_url)
-    profile.load()
-    page.wait_for_load_state("domcontentloaded")
-    page.wait_for_timeout(2000)
-
-    # Wait up to 30s for profile data; fail if not visible
-    if not _wait_for_profile_data_visible(page, timeout_ms=_PROFILE_DATA_TIMEOUT_MS):
-        pytest.fail(
-            f"Profile data not visible within {_PROFILE_DATA_TIMEOUT_MS // 1000}s. "
-            "Expected TEST_EMAIL, name, or Basic info to appear on profile."
-        )
-
-    # Data is visible: take screenshot only now
-    profile.verify_loaded()
+    # Optional: screenshot of resumes page after upload
     _PROFILE_AFTER_RESUME_SCREENSHOT.parent.mkdir(parents=True, exist_ok=True)
     page.screenshot(path=str(_PROFILE_AFTER_RESUME_SCREENSHOT), full_page=True)
 

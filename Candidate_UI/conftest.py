@@ -6,6 +6,7 @@ import logging
 import os
 import re
 import sys
+import ast
 from contextvars import ContextVar
 from dataclasses import dataclass
 from pathlib import Path
@@ -83,43 +84,53 @@ class RunConfig:
 
 
 def pytest_addoption(parser: pytest.Parser) -> None:
-    parser.addoption("--base-url", action="store", default=env_settings.BASE_URL)
-    parser.addoption("--browser", action="store", default=config_settings.browser_name)
-    parser.addoption("--headless", action="store_true", default=config_settings.headless)
-    parser.addoption("--headed", action="store_true", default=False)
-    parser.addoption("--slowmo", action="store", default=str(config_settings.slow_mo_ms))
-    parser.addoption("--ignore-https-errors", action="store_true", default=config_settings.ignore_https_errors)
-    parser.addoption(
+    def _safe_addoption(*args, **kwargs) -> None:
+        try:
+            parser.addoption(*args, **kwargs)
+        except Exception as exc:
+            # Some environments may pre-register options (e.g. --base-url via external plugins).
+            # Ignore duplicate option registration and keep existing behavior.
+            message = str(exc)
+            if "already added" not in message and "conflicting option string" not in message:
+                raise
+
+    _safe_addoption("--base-url", action="store", default=env_settings.BASE_URL)
+    _safe_addoption("--browser", action="store", default=config_settings.browser_name)
+    _safe_addoption("--headless", action="store_true", default=config_settings.headless)
+    _safe_addoption("--headed", action="store_true", default=False)
+    _safe_addoption("--slowmo", action="store", default=str(config_settings.slow_mo_ms))
+    _safe_addoption("--ignore-https-errors", action="store_true", default=config_settings.ignore_https_errors)
+    _safe_addoption(
         "--use-mocks",
         action="store_true",
         default=False,
         help="Intercept API calls and return mock data (jobs, resumes, preps) so UI works without backend.",
     )
-    parser.addoption(
+    _safe_addoption(
         "--open-report",
         action="store_true",
         default=None,
         help="Open the HTML report (reports/report.html) after the test run completes.",
     )
-    parser.addoption(
+    _safe_addoption(
         "--open-report-chrome",
         action="store_true",
         default=False,
         help="Open the HTML report in Google Chrome after the test run.",
     )
-    parser.addoption(
+    _safe_addoption(
         "--no-open-report",
         action="store_true",
         default=False,
         help="Do not open the HTML report after the test run completes.",
     )
-    parser.addoption(
+    _safe_addoption(
         "--no-auth",
         action="store_true",
         default=False,
         help="Run without saved auth state (browser starts with no login session).",
     )
-    parser.addoption(
+    _safe_addoption(
         "--no-login",
         action="store_true",
         default=False,
@@ -391,9 +402,26 @@ def pytest_runtest_makereport(item: pytest.Item, call: pytest.CallInfo):
 
 @pytest.fixture(scope="session")
 def run_config(pytestconfig: pytest.Config) -> RunConfig:
-    base_url = str(pytestconfig.getoption("--base-url"))
-    browser_name = str(pytestconfig.getoption("--browser"))
-    slow_mo_ms = int(pytestconfig.getoption("--slowmo"))
+    def _normalize_scalar_option(value) -> str:
+        """
+        Normalize plugin-provided option values.
+        Some plugins may pass list-like values (e.g. "['chromium']").
+        """
+        if isinstance(value, (list, tuple)):
+            return str(value[0]) if value else ""
+        text = str(value).strip()
+        if text.startswith("[") and text.endswith("]"):
+            try:
+                parsed = ast.literal_eval(text)
+                if isinstance(parsed, (list, tuple)):
+                    return str(parsed[0]) if parsed else ""
+            except Exception:
+                pass
+        return text
+
+    base_url = _normalize_scalar_option(pytestconfig.getoption("--base-url"))
+    browser_name = _normalize_scalar_option(pytestconfig.getoption("--browser"))
+    slow_mo_ms = int(_normalize_scalar_option(pytestconfig.getoption("--slowmo")) or 0)
 
     headless = bool(pytestconfig.getoption("--headless"))
     if bool(pytestconfig.getoption("--headed")):

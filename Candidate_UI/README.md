@@ -69,6 +69,53 @@ python run_tests.py --suite regression
 python run_tests.py --markexpr "smoke and not negative"
 ```
 
+## Schedule daily run + email report (Windows)
+
+### 1) Add SMTP settings to `.env`
+
+```bash
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email@gmail.com
+SMTP_PASS=your_app_password
+MAIL_TO=your_email@gmail.com
+# Optional:
+# SMTP_FROM=qa-bot@yourcompany.com
+# SMTP_TLS=true
+# SMTP_SSL=false
+```
+
+### 2) Run locally once (test + email)
+
+```bash
+powershell -ExecutionPolicy Bypass -File scripts/run_scheduled_tests.ps1
+```
+
+Python-only alternative:
+
+```bash
+venv\Scripts\python.exe scripts/run_scheduled_tests.py
+```
+
+For smoke-only:
+
+```bash
+powershell -ExecutionPolicy Bypass -File scripts/run_scheduled_tests.ps1 -PytestArgs "tests -m smoke -q"
+```
+
+### 3) Task Scheduler command
+
+Create a Windows Task Scheduler task (daily trigger), and set:
+
+- Program/script: `D:\playwright-mcp\venv\Scripts\python.exe`
+- Add arguments:
+
+```bash
+scripts\run_scheduled_tests.py --project-root D:\playwright-mcp
+```
+
+This flow runs pytest first and then emails `test-results/report.html` (+ `test-results/test.log`).
+
 ## Project structure
 
 - `framework/`: page objects + shared config

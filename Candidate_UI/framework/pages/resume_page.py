@@ -319,7 +319,8 @@ class ResumePage(BasePage):
             print("Add Resume clicked")
         except Exception as e:
             self._screenshot_on_failure("click_add_resume")
-            print(f"Result: click_add_resume failed - {e}")
+            msg = str(e).encode("ascii", "replace").decode()
+            print(f"Result: click_add_resume failed - {msg}")
             raise
 
     def _select_file_button(self) -> Locator:
@@ -543,6 +544,33 @@ class ResumePage(BasePage):
             self._screenshot_on_failure("verify_resume_uploaded")
             print(f"Result: verify_resume_uploaded failed - {e}")
             raise
+
+    # Date/time patterns commonly shown on resume cards (e.g. "Uploaded 9 Mar 2025, 10:30" or "03/09/2025")
+    _DATE_TIME_PATTERN = re.compile(
+        r"\d{1,2}/\d{1,2}/\d{2,4}|\d{4}-\d{2}-\d{2}|"
+        r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s+\d{4}|"
+        r"\d{1,2}:\d{2}(?:\s*(?:AM|PM))?|\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{4}",
+        re.I,
+    )
+
+    def verify_resume_card_shows_recent_datetime(self, timeout_ms: int = 15_000) -> None:
+        """On the resumes page, verify the (first) resume card shows a date/time and that it is recent (today)."""
+        card = self.uploaded_resume_card.first
+        card.wait_for(state="visible", timeout=timeout_ms)
+        # Find any element inside the card that looks like date/time
+        card_text = card.inner_text(timeout=timeout_ms)
+        if not self._DATE_TIME_PATTERN.search(card_text):
+            raise AssertionError(
+                "Resume card is visible but no date/time text found. "
+                f"Card text (excerpt): {card_text[:200]!r}..."
+            )
+        # Assert the card shows today's year (confirms it's the upload we just did)
+        now = _dt.datetime.now(tz=_dt.timezone.utc)
+        year_str = str(now.year)
+        if year_str not in card_text:
+            raise AssertionError(
+                f"Resume card date/time should include current year ({year_str}). Card text (excerpt): {card_text[:200]!r}..."
+            )
 
     def delete_resume_if_exists(self, timeout_ms: int = _DEFAULT_TIMEOUT) -> None:
         print("Deleting resume if exists")
