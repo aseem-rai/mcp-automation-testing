@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+test-results/
+playwright-report/
+*.pyc
+reports/
+.env
+state.json
+framework/auth/state.json
+framework/auth/.browser_data/
+framework/auth/auth_demohire.json
+framework/auth/auth.json
+*.xlsx
+
